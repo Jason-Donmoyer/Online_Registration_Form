@@ -29,15 +29,15 @@
 				<fieldset>
 					<legend><h3>Contact Information</h3></legend>
 					<label for="name">Full Name</label>
-					<input type="text" id="name" name="Full Name" placeholder="Required" required="true">
+					<input type="text" id="name" name="Full Name" placeholder="Required" required>
 					<label for="email">Email Address</label>
-					<input type="email" id="email" name="Email Address" placeholder="Required" required="true">
+					<input type="email" id="email" name="Email Address" placeholder="Required" required>
 					<label for="phone">Phone Number</label>
-					<input type="tel" id="phone" name="Phone Number">
+					<input type="tel" id="phone" name="Phone Number" placeholder="(***) ***-****">
 					<label for="address">Street Address</label>
-					<input type="text" id="address" name="Street Address">
+					<input type="text" id="address" name="Street Address" placeholder="street">
 					<label for="city">City</label>
-					<input type="text" id="city" name="City">
+					<input type="text" id="city" name="City" placeholder="city">
 					<label for="state">State</label>
 					<select id="state" name="state">
 						<option value="" disable selected>Choose State</option>
@@ -94,7 +94,7 @@
 						<option value="WY">Wyoming</option>
 					</select>
 					<label for="zip">Zip Code</label>
-					<input type="text" id="zip" name="Zip Code"><br>
+					<input type="text" id="zip" name="Zip Code" placeholder="*****"><br>
 				</fieldset>
 
 				<hr class="normHR">
@@ -102,24 +102,24 @@
 				<fieldset>
 					<legend><h3>Newsletter</h3></legend>
 					<p>Select the newsletters you would like to recieve</p>
-					<input type="checkbox" id="html-news" value="HTML News" name="newsletter" checked>HTML News
+					<input type="checkbox" id="html-news" value="HTML News" name="newsletter" checked><span>HTML News</span>
 					<label class="checkbox" for="html-news"></label>
 					<br>
-					<input type="checkbox" id="css-news" value="CSS News" name="newsletter">CSS News
+					<input type="checkbox" id="css-news" value="CSS News" name="newsletter"><span>CSS News</span>
 					<label class="checkbox" for="css-news"></label>
 					<br>
-					<input type="checkbox" id="javascript-news" value="Javascript News" name="newsletter">Javascript News
+					<input type="checkbox" id="javascript-news" value="Javascript News" name="newsletter"><span>Javascript News</span>
 					<label class="checkbox" id="javascript-news"></label>
 					<br>
 					<p>Newsletter format</p>
-					<input type="radio" id="html-format" value="HTML" name="newletter-format" checked>HTML
+					<input type="radio" id="html-format" value="HTML" name="newletter-format" checked><span>HTML</span>
 					<label class="radio" id="html-format"></label>
 					<br>
-					<input type="radio" id="text-format" value="Plain text" name="newsletter-format">Plain text
+					<input type="radio" id="text-format" value="Plain text" name="newsletter-format"><span>Plain text</span>
 					<label class="radio" id="text-format"></label>
 					<br>
-					<label for="otherTextarea">Other topics you'd like to hear about</label>
-					<textarea id="otherTextarea" name="other"></textarea>
+					<label class="other-topics" for="otherTextarea">Other topics you'd like to hear about</label>
+					<textarea id="otherTextarea" name="other" placeholder="Please leave feedback here!"></textarea>
 				</fieldset>
 				<button type="submit">Sign Up</button>
 			</form>
@@ -132,6 +132,6 @@
 			</form>
 		</div>
 	</div>
-
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
