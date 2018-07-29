@@ -1,4 +1,6 @@
 
+//Radio Button Script
+
 let html = document.getElementById("html-format");
 let text = document.getElementById("text-format");
 
