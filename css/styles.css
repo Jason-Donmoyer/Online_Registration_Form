@@ -134,6 +134,16 @@ textarea::placeholder {
 	color: #bcbcbc;
 }
 
+input[name="Full Name"]::placeholder,
+input[name="Email Address"]::placeholder {
+	text-align: right;
+}
+
+textarea::placeholder {
+	text-align: center;
+	line-height: 115px;
+}
+
 span {
 	color: #adabab;
 	font-size: .85em;
@@ -146,7 +156,7 @@ input[type="checkbox"] {
 
 input:focus,
 textarea:focus {
-	transition: 1s ease-in;
+	transition: background 1s ease-in-out;
 	background: #aed6f9;
 	color: #000;
 }
@@ -158,8 +168,9 @@ input[type="tel"]:hover,
 input[type="email"]:hover,
 #state:hover {
 	cursor: pointer;
-	transition: .5s ease-in;
+	transition: height .5s ease-in;
 	height: 55px;
+
 }
 
 textarea:hover,
