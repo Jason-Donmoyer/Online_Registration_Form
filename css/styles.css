@@ -161,19 +161,20 @@ textarea:focus {
 	color: #000;
 }
 
-
-
 input[type="text"]:hover,
 input[type="tel"]:hover,
 input[type="email"]:hover,
-#state:hover {
+#state:hover,
+textarea:hover {
 	cursor: pointer;
-	transition: height .5s ease-in;
-	height: 55px;
-
+	transition: background .5s ease-in;
+	background: #aecfff;
+}
+input:hover::placeholder,
+textarea:hover::placeholder {
+	color: #fff;
 }
 
-textarea:hover,
 button:hover {
 	cursor: pointer;
 }
@@ -222,11 +223,7 @@ button {
 
 footer {
 	text-align: center;
-	color: #fff;
-	background: #4c0f0f;
 	padding-top: 20px;
-	height: 100px;
-	line-height: 100px;
 }
 
 /*************************************
@@ -246,10 +243,32 @@ footer {
 	.main-header {
 		margin-bottom: 30px;
 	}
+
+	#contact-info label {
+		display: inline-block;
+		text-align: left;
+		height: 50px;
+		line-height: 50px;
+		width: 20%;
+		padding: 1px 10px 1px 0;
+		margin-bottom: 20px;
+	}
+
+	input[type="text"],
+	input[type="tel"],
+    input[type="email"],
+    select,
+    #state {
+    	display: inline-block;
+    	width: 70%;
+    	float: right;
+    }
+
+	#zip {
+		display: inline-block;
+		width: 30%;
+		margin-right: 40%;
+	}
+
 }
 
-
-
-
-
-/*font-family: 'Merriweather', serif;*/
